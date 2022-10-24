@@ -198,10 +198,13 @@ div {
 }
 
 .cards {
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .high {
   height: 100%;
 }
+
+
+
 

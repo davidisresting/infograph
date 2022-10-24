@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+    .grid5 {
+        grid-template-columns: 1fr .1fr 1fr;
+    }
+    .cards {
+      flex-direction: column;
+    }
+  }
+
+/* @media screen and (max-width: 500px) {
+    .grid5 {
+        grid-template-columns: 1fr .1fr 1fr;
+    }
+    .cards {
+      flex-direction: column;
+    }
+  } */
