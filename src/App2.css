@@ -1,0 +1,258 @@
+:root {
+    --primary: #CD0A2A;
+    --blue1: #4580C2;
+    --blue2: #00B5BC;
+    --orange: #F26923;
+    --blue3: #445490;
+    --grey: #ECECEC;
+    --green: #2C9A73;
+    --lightGreen: #46B393;
+    --darkGrey: #7E7E7E;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 0; */
+  }
+  
+  body {
+    font-size: 1.1rem;
+    /* color: rgba(12, 12, 12, 0.2); */
+    color: dimgray;
+    /* font-weight: 100; */
+  
+    margin: 210px 0;
+  }
+  small {
+    display: block;
+    font-size: .5rem;
+  }
+  div {
+    /* width: 100%; */
+    /* height: 100%; */
+
+
+    /* display: inline-block; */
+  
+    /* padding: 1rem; */
+  }
+  
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .center {
+    text-align: center;
+  }
+  .flex {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  
+  .flex--column {
+    flex-direction: column;
+  }
+  
+  .flex--end {
+    align-items: flex-end;
+  }
+  
+.red {
+    color: var(--primary);
+}
+  
+.green {
+    color: var(--lightGreen);
+}
+  
+.white {
+    color: white;
+}
+  
+.white-bg {
+    background-color: white;
+}
+  
+.red-bg {
+    background-color: var(--primary);
+}
+  
+.blue1-bg {
+    background-color: var(--blue1);
+}
+  
+.blue2-bg {
+    background-color: var(--blue2);
+}
+  
+.orange-bg {
+    background-color: var(--orange);
+}
+  
+.blue3-bg {
+    background-color: var(--blue3);
+}
+  
+.grey-bg {
+    background-color: var(--grey);
+}
+  
+.green-bg {
+    background-color: var(--green);
+}
+  
+  
+.lightGreen-bg {
+    background-color: var(--lightGreen);
+}
+  
+.darkGrey-bg {
+    background-color: var(--darkGrey);
+}
+.thborder--black {
+    border: 3px solid dimgray;
+}
+.thborder--red {
+    border: 3px solid var(--primary);
+}
+
+
+.border--black {
+    border: 1px solid dimgray;
+}
+.border--red {
+    border: 1px solid var(--primary);
+}
+.rounded {
+    border-radius: 15px;
+}
+
+.f1 {
+    flex: 1;
+  }
+  
+  .f2 {
+    flex: 2;
+  }
+  
+  .xl {
+    font-size: 2rem;
+  }
+  
+  .lg {
+    font-size: 1.6rem;
+  }
+  
+  .md {
+    font-size: 1.4rem;
+  }
+  
+  .sm {
+    font-size: .9rem;
+  }
+  
+  .xs {
+    font-size: .7rem;
+  }
+  
+  .bold {
+    font-weight: bold;
+    /* color: var(--darkGreen); */
+    /* text-transform: uppercase; */
+  }
+  
+  .p05 {
+    padding: .5rem;
+  }
+  
+  
+  .p1 {
+    padding: 1rem;
+  }
+  
+  .p2 {
+    padding: 2rem;
+  }
+  .grid6 {
+      display: grid;
+      grid-template-columns: .5fr .1fr 1fr .5fr .1fr 1fr;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  .grid5 {
+    grid-template-columns: repeat(5, 1fr);
+
+    /* grid-template-rows: repeat(10, 50px); */
+  }
+  .g1 {
+    grid-column: span 1;
+  }
+  .g2 {
+    grid-column: span 2;
+  }
+  .g3 {
+    grid-column: span 3;
+  }
+  .g4 {
+    grid-column: span 4;
+  }
+  .g5 {
+    grid-column: span 5;
+  }
+
+  .gy1 {
+    grid-row: span 1;
+  }
+  .gy2 {
+    grid-row: span 2;
+  }
+  .gy3 {
+    grid-row: span 3;
+  }
+  .gy4 {
+    grid-row: span 4;
+  }
+  .gy5 {
+    grid-row: span 5;
+  }
+  
+  .my01 {
+    margin: 0 0 1rem 0;
+  }
+  
+  .my1 {
+    margin: 1rem 0;
+  }
+  
+  .my2 {
+    margin: 2rem 0;
+  }
+  .vertical {
+    writing-mode:vertical-rl;
+    transform: rotate(-180deg);
+  }
+  .card-head {
+    /* border-radius: 15px 0 0 15px; */
+    border-radius: 0 15px 15px 0;
+    height: 365px;
+  }
+  .card-body {
+    /* border-radius: 15px 0 0 15px; */
+    border-radius: 0 15px 15px 0;
+    height: 365px;
+  }
+  .arrow {
+    width: 3rem;
+    height: auto;
+  
+    background-color: red;
+    display: block;
+  }
