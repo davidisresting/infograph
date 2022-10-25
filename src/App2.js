@@ -86,7 +86,11 @@ const isTabletOrMobile = useMediaQuery({
                         <img src={black_arrow} alt='black_arrow' className='black_arrowLong' />
                     </div> */}
 
-                    <div className='g3'></div>
+                    <div className='g1 line flex'>
+                        <div className='lineInner'></div>
+                    </div>
+
+                    <div className='g2'></div>
 
                     <div className='border--black center p05 bold rounded g1'>
                         Insufficienza
