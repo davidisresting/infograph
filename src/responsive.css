@@ -9,11 +9,19 @@
     .cards {
       flex-direction: column;
     }
+    .grid4,
     .grid5 {
         grid-template-columns: 1fr .1fr 1fr;
     }
     .cards {
       flex-direction: column;
+    }
+    .blank,
+    .arroww {
+      display: none;
+    }
+    .heading {
+      grid-column: span 3;
     }
   }
 

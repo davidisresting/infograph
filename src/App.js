@@ -2,22 +2,17 @@
 import logo from './shield.jpg';
 import './App.css';
 import './responsive.css';
-import { useMediaQuery } from 'react-responsive'
 import right_white from './right_white.jpg';
 import right_green from './right_green.jpg';
 import ball from './ball.jpg';
 import snake from './snake.jpg';
 
 function App() {
-  const isTabletOrMobile = useMediaQuery({
-    query: "(max-width: 768px)",
-  });
-  
   return (
     <div className='app container'>
       <header className='header flex'>
         <img src={logo} className='logo' alt="logo" />
-        <h1 className='title'>
+        <h1 className='title my2'>
           SACITUZUMAB GOVITECAN HA UN PROFILO
           DI TOSSICITÀ BEN DEFINITO E MANEGGEVOLE<sup>1</sup>
         </h1>
@@ -27,119 +22,89 @@ function App() {
       <section>
 
       <div className='grid grid5 border p1'>
-        <div></div>
-        <div></div>
-        <div className='green bold center green-bg'>Sacituzumab govitecan<sup>2</sup></div>
+        <div className='blank'></div>
+        <div className='blank'></div>
+        <div className='green bold center green-bg inline super'>Sacituzumab govitecan</div>
         <div className='center'>vs</div>
-        <div className='bold grey-bg'>Chemioterapia<sup>2</sup></div>
+        <div className='bold center grey-bg inline super'>Chemioterapia</div>
 
-        <div className='bold green green-bg-light super flex p1 center'>
-        {/* <div className='flex f2 p1'> */}
-            {/* <p className='bold md'> */}
+        <div className='heading bold green green-bg-light super inline p1 center'>
               EVENTI AVVERSI CHE
               HANNO PORTATO
               ALL’INTERRUZIONE
-              DEL TRATTAMENTO<sup>2</sup>
-            {/* </p> */}
-          {/* </div> */}
+              DEL TRATTAMENTO
         </div>
-        <div className='green-bg-light'>
+        <div className='green-bg-light arroww'>
         <img src={right_green} className='arrow' alt='arrow' />
         </div>
         <div className='green-bg-dark p1 center'>
         <div className='bold lg green flex'>5<span className='md'>%</span></div>
+          <div className='inline super'>
             dei pazienti trattati con
-            sacituzumab govitecan<sup>2</sup>
+            sacituzumab govitecan
+          </div>
         </div>
         <div className='center'>vs</div>
         <div className='grey-bg-dark p1 center'>
         <div className='bold lg flex'>5<span className='md'>%</span></div>
+          <div className='inline super'>
             dei pazienti con
-            chemioterapia<sup>2</sup>
+            chemioterapia
+          </div>
         </div>
         
 
-        <div className='bold green super flex p1 center'>
-        {/* <div className='flex f2 p1'> */}
-            {/* <p className='bold md'> */}
+        <div className='heading bold green inline super p1 center'>
             PAZIENTI DECEDUTI
             A CAUSA DEGLI
-            EVENTI AVVERSI<sup>2</sup>
-            {/* </p> */}
-          {/* </div> */}
+            EVENTI AVVERSI
         </div>
-        <div className=''>
+        <div className='arroww'>
         <img src={right_white} className='arrow' alt='arrow' />
         </div>
         <div className='green-bg p1 center'>
         <div className='bold md green'>NESSUN DECESSO</div>
-          è stato considerato
-          correlato al trattamento
-          con sacituzumab govitecan2<sup>2</sup>
+          <div className='inline super'>
+            è stato considerato
+            correlato al trattamento
+            con sacituzumab govitecan
+          </div>
         </div>
         <div className='center'>vs</div>
         <div className='grey-bg p1 center'>
         <div className='bold md'>1 DECESSO</div>
-          nel gruppo trattato con
-          chemioterapia è stato
-          considerato correlato
-          al trattamento
-          (sepsi neutropenica)<sup>2</sup>
+          <div className='inline super'>
+            nel gruppo trattato con
+            chemioterapia è stato
+            considerato correlato
+            al trattamento
+            (sepsi neutropenica)
+          </div>
         </div>
 
-        <div className='bold green green-bg-light super flex p1 center'>
-        {/* <div className='flex f2 p1'> */}
-            {/* <p className='bold md'> */}
+        <div className='heading bold green green-bg-light super flex p1 center'>
             RIDUZIONE DELLA
             DOSE DOVUTE A
-            EVENTI AVVERSI<sup>2</sup>
-            {/* </p> */}
-          {/* </div> */}
+            EVENTI AVVERSI
         </div>
-        <div className='green-bg-light'>
+        <div className='green-bg-light arroww'>
         <img src={right_green} className='arrow' alt='arrow' />
         </div>
         <div className='green-bg-dark p1 center'>
         <div className='bold lg green flex'>22<span className='md'>%</span></div>
-          dei pazienti trattati con
-          sacituzumab govitecan<sup>2</sup>
+          <div className='inline super'>
+            dei pazienti trattati con
+            sacituzumab govitecan
+          </div>
         </div>
         <div className='center'>vs</div>
         <div className='grey-bg-dark p1 center'>
-        <div className='bold lg'>26%</div>
-          dei pazienti trattati
-          con chemioterapia<sup>2</sup>
+        <div className='bold lg flex'>26<span className='md'>%</span></div>
+          <div className='inline super'>
+            dei pazienti trattati
+            con chemioterapia
+          </div>
         </div>
-
-        {/* <div className='green green-bg-light'>DIARREA<sup>2</sup></div>
-        <img src={right_green} className='arrow' alt='arrow' />
-        <div className='bold green green-bg'>59%</div>
-        <div className='center'>vs</div>
-        <div className='bold grey-bg'>12%</div>
-
-        <div className='green green-bg-light'>NAUSEA<sup>2</sup></div>
-        <img src={right_green} className='arrow' alt='arrow' />
-        <div className='bold green green-bg-dark'>57%</div>
-        <div className='center'>vs</div>
-        <div className='bold grey-bg-dark'>26%</div>
-
-        <div className='green green-bg-light'>ALOPECIA<sup>2</sup></div>
-        <img src={right_green} className='arrow' alt='arrow' />
-        <div className='bold green green-bg'>46%</div>
-        <div className='center'>vs</div>
-        <div className='bold grey-bg'>16%</div>
-
-        <div className='green green-bg-light'>FATIGUE<sup>2</sup></div>
-        <img src={right_green} className='arrow' alt='arrow' />
-        <div className='bold green green-bg-dark'>45%</div>
-        <div className='center'>vs</div>
-        <div className='bold grey-bg-dark'>30%</div>
-
-        <div className='green green-bg-light'>ANEMIA<sup>2</sup></div>
-        <img src={right_green} className='arrow' alt='arrow' />
-        <div className='bold green green-bg'>34%</div>
-        <div className='center'>vs</div>
-        <div className='bold grey-bg'>24%</div> */}
 
       </div>
       </section>
@@ -150,37 +115,37 @@ function App() {
       <section>
 
         <div className='grid grid4 border p1'>
-          <div></div>
-          <div className='green bold center green-bg'>Sacituzumab govitecan<sup>2</sup></div>
+          <div className='blank'></div>
+          <div className='green bold center green-bg flex super'>Sacituzumab govitecan</div>
           <div className='center'>vs</div>
-          <div className='bold grey-bg'>Chemioterapia<sup>2</sup></div>
+          <div className='bold grey-bg flex super'>Chemioterapia</div>
 
-          <div className='green green-bg-light super flex'>NEUTROPENIA</div>
+          <div className='heading green green-bg-light super flex'>NEUTROPENIA</div>
           <div className='bold green green-bg-dark'>63%</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg-dark'>43%</div>
 
-          <div className='green green-bg-light'>DIARREA<sup>2</sup></div>
+          <div className='heading green green-bg-light super flex'>DIARREA</div>
           <div className='bold green green-bg'>59%</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg'>12%</div>
 
-          <div className='green green-bg-light'>NAUSEA<sup>2</sup></div>
+          <div className='heading green green-bg-light super flex'>NAUSEA</div>
           <div className='bold green green-bg-dark'>57%</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg-dark'>26%</div>
 
-          <div className='green green-bg-light'>ALOPECIA<sup>2</sup></div>
+          <div className='heading green green-bg-light super flex'>ALOPECIA</div>
           <div className='bold green green-bg'>46%</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg'>16%</div>
 
-          <div className='green green-bg-light'>FATIGUE<sup>2</sup></div>
+          <div className='heading green green-bg-light super flex'>FATIGUE</div>
           <div className='bold green green-bg-dark'>45%</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg-dark'>30%</div>
 
-          <div className='green green-bg-light'>ANEMIA<sup>2</sup></div>
+          <div className='heading green green-bg-light super flex'>ANEMIA</div>
           <div className='bold green green-bg'>34%</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg'>24%</div>
@@ -191,7 +156,7 @@ function App() {
 
       <section className='my2'>
         <p className='green center md'>
-          Gli eventi avversi di grado 3 o 4 più rilevanti dal punto di vista
+          Gli heading avversi di grado 3 o 4 più rilevanti dal punto di vista
           clinico sono stati la <span className='bold'>NEUTROPENIA</span> e la <span className='bold'>DIARREA</span>, che sono
           stati gestiti con misure di supporto clinico stabilite<sup>2</sup>
         </p>
@@ -199,7 +164,7 @@ function App() {
 
       <section className='flex cards'>
       <div className='f1 border p1'>
-        <div className='flex flex--column green-bg round p1 high'>
+        <div className='flex flex--column flex--start green-bg round p1'>
           <div className='green bold md center'>NEUTROPENIA<sup>3</sup></div>
           <img src={ball} alt='ball' className='ball my1' />
           <p className='center md'>
@@ -212,25 +177,25 @@ function App() {
       </div>
 
       <div className='f1 border p1'>
-        <div className='flex flex--column green-bg round p1'>
+        <div className='flex flex--column green-bg round p1 flex--start'>
           <div className='green bold md center'>DIARREA<sup>3</sup></div>
           <img src={snake} alt='snake' className='snake my1' />
-          <p className='center md'>
+          <div className='center md'>
           Al momento dell’insorgenza della diarrea,
           e se non viene identificata alcuna causa
           di infezione, <span className='green bold'>deve essere iniziato
           il trattamento con loperamide</span><sup>3</sup> 
           
-          <p className='my2'>
+          <div className='my2'>
           Inoltre, è possibile impiegare
            <span className='green bold'>misure
           di supporto aggiuntive</span>(ad esempio <span className='green bold'>
           reintegrazione di liquidi e degli
           elettroliti
           </span>), come indicato clinicamente<sup>3</sup>
-          </p>
+          </div>
 
-          </p>
+          </div>
         </div>
         </div>
 
