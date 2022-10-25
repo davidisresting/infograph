@@ -1,9 +1,9 @@
 import '../App2.css';
-import './TreeMobile.css';
+import './Tree.css';
 import arrow from '../arrow.jpg';
 
 
-export default function TreeMobile() {
+export default function Tree() {
   return (
         <section>
             <div className='thborder--red rounded p1'>
