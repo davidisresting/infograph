@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import logo from './shield.jpg';
 import './App.css';
 import './responsive.css';
@@ -116,7 +115,7 @@ function App() {
 
         <div className='grid grid4 border p1'>
           <div className='blank'></div>
-          <div className='green bold center green-bg flex super'>Sacituzumab govitecan</div>
+          <div className='green bold center green-bg inline super'>Sacituzumab govitecan</div>
           <div className='center'>vs</div>
           <div className='bold grey-bg flex super'>Chemioterapia</div>
 

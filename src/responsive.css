@@ -18,7 +18,11 @@
     }
     .blank,
     .arroww {
-      display: none;
+      /* display: none; */
+
+      transform: rotate(90deg);
+      grid-column: span 3;
+      background-color: transparent;
     }
     .heading {
       grid-column: span 3;

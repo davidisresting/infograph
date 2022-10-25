@@ -1,9 +1,13 @@
 :root {
     --primary: #CD0A2A;
     --blue1: #4580C2;
+    --blue1Trans: rgba(69, 128, 194, .14);
     --blue2: #00B5BC;
+    --blue2Trans: rgba(0, 181, 188, .1);
     --orange: #F26923;
+    --orangeTrans: rgba(242, 105, 35, .14);
     --blue3: #445490;
+    --blue3Trans: rgb(68, 84, 144, .2);
     --grey: #ECECEC;
     --green: #2C9A73;
     --lightGreen: #46B393;
@@ -59,12 +63,20 @@
     flex-direction: column;
   }
   
+  .flex--start {
+    align-items: flex-start;
+  }
+  
   .flex--end {
     align-items: flex-end;
   }
   
 .red {
     color: var(--primary);
+}
+  
+.blue {
+    color: var(--blue1);
 }
   
 .green {
@@ -91,6 +103,10 @@
     background-color: var(--blue2);
 }
   
+.orange {
+    color: var(--orange);
+}
+  
 .orange-bg {
     background-color: var(--orange);
 }
@@ -105,6 +121,38 @@
   
 .green-bg {
     background-color: var(--green);
+}
+  
+.blueTrans-bg {
+    background-color: var(--blue1Trans);
+}
+  
+.cyan {
+    color: var(--blue2);
+}
+  
+.darkBlue {
+    color: var(--blue3);
+}
+  
+.cyan-bg {
+    background-color: var(--blue2);
+}
+  
+.cyanTrans-bg {
+    background-color: var(--blue2Trans);
+}
+  
+.darkBlue-bg {
+    background-color: var(--blue3);
+}
+  
+.darkBlueTrans-bg {
+    background-color: var(--blue3Trans);
+}
+  
+.orangeTrans-bg {
+    background-color: var(--orangeTrans);
 }
   
   
@@ -128,6 +176,30 @@
 }
 .border--red {
     border: 1px solid var(--primary);
+}
+.border--darkBlue {
+    border: 1px solid var(--blue3);
+}
+.border--blue {
+    border: 1px solid var(--blue1);
+}
+.bb--blue {
+    border-bottom: 1px solid var(--blue1);
+}
+.border--cyan {
+    border: 1px solid var(--blue2);
+}
+.bb--cyan {
+  border-bottom: 1px solid var(--blue2);
+}
+.border--orange {
+    border: 1px solid var(--orange);
+}
+.bb--orange {
+  border-bottom: 1px solid var(--orange);
+}
+.bb--darkBlue {
+  border-bottom: 1px solid var(--blue3);
 }
 .rounded {
     border-radius: 15px;
@@ -178,6 +250,13 @@
   
   .p2 {
     padding: 2rem;
+  }
+  .grid3 > * {
+    padding: 1rem;
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: .5fr .1fr 5fr;
   }
   .grid6 {
       display: grid;
@@ -256,3 +335,59 @@
     background-color: red;
     display: block;
   }
+  .notes {
+  gap: 1.5rem;
+  /* overflow-x: auto; */
+  /* display: inline-block; */
+  display: flex;
+  }
+.note {
+  /* float: left; */
+  max-width: 360px;
+  /* min-width: 360px; */
+}
+  .blue_note {
+    width: 5rem;
+    height: auto;
+  }
+/* .new-arrow {
+  filter: invert(1);
+} */
+/* .huerotate {
+  filter: hue-rotate(90deg);
+} */
+/* .hueCyan {
+  filter: hue-rotate(-35deg);
+  -webkit-filter: hue-rotate(-35deg);
+} */
+/* .hueOrange {
+  filter: hue-rotate(165deg);
+
+} */
+/* .hueDarkBlue {
+  filter: hue-rotate(25deg);
+  -webkit-filter: hue-rotate(25deg);
+} */
+.roundt {
+  border-radius: 15px 15px 0 0;
+}
+.roundtr {
+  border-radius: 0 15px 0 0;
+}
+
+.roundtl {
+  border-radius: 15px 0 0 0;
+}
+
+.roundbr {
+  border-radius: 0 0 15px 0;
+}
+
+.roundbl {
+  border-radius: 0 0 0 15px;
+}
+
+
+.trans {
+  opacity: .2;
+}
