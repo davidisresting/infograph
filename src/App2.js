@@ -1,6 +1,7 @@
 import './App2.css';
 import './responsive2.css';
 import arrow from './arrow.jpg';
+import black_arrow from './black_arrow.jpg';
 import blue_arrow from './blue_arrow.jpg';
 import orange_arrow from './orange_arrow.jpg';
 import cyan_arrow from './cyan_arrow.jpg';
@@ -11,7 +12,6 @@ import darkBlue_note from './darkBlue_note.jpg';
 import orange_note from './orange_note.jpg';
 import { useMediaQuery } from 'react-responsive';
 import CardMobile from './CardMobile';
-import TreeMobile from './TreeMobile';
 
 
 
@@ -24,7 +24,7 @@ const isTabletOrMobile = useMediaQuery({
   return (
     <div className='app container'>
         <h1 className='red'>
-        Algoritmo terapeutico del carcinoma mammario triplo-negativo metastatico (mTNBC)2
+        Algoritmo terapeutico del carcinoma mammario triplo-negativo metastatico (mTNBC)<sup>2</sup>
         </h1>
 
         <section>
@@ -48,9 +48,25 @@ const isTabletOrMobile = useMediaQuery({
                     <div className='red-bg white center p05 bold md rounded g5'>
                         Pazienti con mTNBC
                     </div>
-                    {/* <span>&darr;</span> */}
+                                        
+                    <div className='barrow flex g5'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+
                     <div className='thborder--black center p05 bold md rounded g5'>
                         Ricerca di marcatori diagnostico-terapeutici
+                    </div>
+                    
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+                    <div className='barrow flex g2'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+                    <div className='barrow flex g2'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
                     </div>
 
                     <div className='border--black center p05 bold md rounded g1'>
@@ -65,6 +81,11 @@ const isTabletOrMobile = useMediaQuery({
                         Pazienti PD-L1- BRCA wild-type
                     </div>
 
+                                        
+                    {/* <div className='barrowLong flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrowLong' />
+                    </div> */}
+
                     <div className='g3'></div>
 
                     <div className='border--black center p05 bold rounded g1'>
@@ -76,6 +97,32 @@ const isTabletOrMobile = useMediaQuery({
                         Nessuna insufficienza
                         d’organo imminente
                     </div>
+
+                    
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
 
                     <div className='blue1-bg white center p05 bold rounded g1 gy2'>
                         Atezolizumab
@@ -129,12 +176,63 @@ const isTabletOrMobile = useMediaQuery({
                         Pembrolizumab
                         +
                         CT
-                        [II, A; MCBS 3; ESCAT I-A]a,c-f
+                        [II, A; MCBS 3; ESCAT I-A]<sup>a,c-f</sup>
                     </div>
+
+                    
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
 
                     <div className='green-bg white center p05 bold rounded g5'>
                         Sacituzumab govitecan (preferibile) [I, A; MCBS 4]c,e o CT
                     </div>
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
+
+                    <div className='barrow flex g1'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+                    
 
                     <div className='darkGrey-bg white center p05 bold rounded g5'>
                         CT: eribulina, capecitabina o vinorelbina
@@ -317,7 +415,7 @@ const isTabletOrMobile = useMediaQuery({
                     </div>
 
                     <div className='bb--orange center'>
-                        <div className=' bold'>
+                        <div className='orange bold'>
                             6,8 mesi
                         </div>
                         <div>
@@ -377,7 +475,7 @@ const isTabletOrMobile = useMediaQuery({
                     </div>
 
                     <div className='bb--darkBlue center'>
-                        <div className=' bold'>
+                        <div className='darkBlue bold'>
                             7 mesi
                         </div>
                         <div>
@@ -460,7 +558,7 @@ const isTabletOrMobile = useMediaQuery({
                     </div>
 
                     <div className='bb--darkBlue center'>
-                        <div className=' bold'>
+                        <div className='darkBlue bold'>
                             8,6 mesi
                         </div>
                         <div>

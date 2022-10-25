@@ -266,6 +266,9 @@
     display: grid;
     gap: 1rem;
   }
+  /* .grid5 > * {
+    display: flex;
+  } */
   .grid5 {
     grid-template-columns: repeat(5, 1fr);
 
@@ -397,4 +400,19 @@
 
 .botcard {
   align-items: stretch;
+}
+.black_arrow {
+  height: 3rem;
+  /* width: .6rem; */
+}
+.barrow {
+  /* background-color: red; */
+  height: 1rem;
+}
+.black_arrowLong {
+  height: 6rem;
+  width: 1rem;
+}
+.barrowLong {
+  height: 6rem;
 }
