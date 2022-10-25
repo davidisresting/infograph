@@ -1,4 +1,5 @@
 import './App2.css';
+import './responsive2.css';
 import arrow from './arrow.jpg';
 import blue_arrow from './blue_arrow.jpg';
 import orange_arrow from './orange_arrow.jpg';
@@ -8,9 +9,18 @@ import blue_note from './blue_note.jpg';
 import cyan_note from './cyan_note.jpg';
 import darkBlue_note from './darkBlue_note.jpg';
 import orange_note from './orange_note.jpg';
+import { useMediaQuery } from 'react-responsive';
+import CardMobile from './CardMobile';
+import TreeMobile from './TreeMobile';
+
+
 
 
 function App() {
+const isTabletOrMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+    });
+
   return (
     <div className='app container'>
         <h1 className='red'>
@@ -31,6 +41,7 @@ function App() {
             </ul>
         </section>
 
+        {!isTabletOrMobile && (
         <section>
             <div className='thborder--red rounded p1'>
                 <div className='grid grid5'>
@@ -140,6 +151,9 @@ function App() {
                 <small>gSe non utilizzato in precedenza.2</small>
             </div>
         </section>
+        )}
+
+        {/* {isTabletOrMobile && <TreeMobile />} */}
 
 
         <section className='notes'>
@@ -508,10 +522,10 @@ function App() {
 
         </section>
 
-
+        {!isTabletOrMobile && (
         <section className='my2'>
-            <div className='flex'>
-                <div className='green-bg white vertical center card-head'>
+            <div className='flex botcard'>
+                <div className='green-bg white vertical center card-head p1'>
                     <div className='lg bold'>
                         Studio ASCENT
                         <sup>3</sup>
@@ -531,7 +545,7 @@ function App() {
                 </div>
 
                 <div className='lightGreen-bg card-body p1'>
-                    <div className='white center bold'>
+                    <div className='white center bold rmobile'>
                         Sacituzumab govitecan in monoterapia è indicato per il trattamento di pazienti adulti con cancro della
                         mammella triplo negativo metastatico o non resecabile che abbiano ricevuto in precedenza almeno
                         due terapie sistemiche, almeno una delle quali per la malattia avanzata<sup>10</sup>
@@ -540,7 +554,7 @@ function App() {
                     <div className='grid6 my1'>
                         <div className='g2'></div>
 
-                        <div className='white-bg center rounded p05'>
+                        <div className='white-bg center rounded p05 rmobile'>
                             <div className='green bold'>
                                 <div className='xl'>5,6 mesi</div>
                                 
@@ -555,7 +569,7 @@ function App() {
 
                         <div className='g2'></div>
 
-                        <div className='white-bg center rounded p05'>
+                        <div className='white-bg center rounded p05 rmobile'>
                             <div className='green bold'>
                                 <div className='xl'>12,1 mesi</div>
                                 con sacituzumab govitecan
@@ -571,18 +585,22 @@ function App() {
                             mediana
                         </div>
 
-                        <img src={arrow} alt='arrow' className='arrow center' />
+                        <div className='flex'>
+                            <img src={arrow} alt='arrow' className='arrow center' />
+                        </div>
 
-                        <div className='white center'>VS</div>
+                        <div className='white center flex'>VS</div>
 
                         <div className='white center bold'>
                             <div className='lg'>OS</div>
                             mediana
                         </div>
 
-                        <img src={arrow} alt='arrow' className='arrow center' />
+                        <div className='flex'>
+                            <img src={arrow} alt='arrow' className='arrow center' />
+                        </div>
 
-                        <div className='white center'>VS</div>
+                        <div className='white center flex'>VS</div>
 
                         <div className='g2'></div>
 
@@ -609,6 +627,9 @@ function App() {
                 </div>
             </div>
         </section>
+        )}
+
+        {isTabletOrMobile && <CardMobile />}
 
         <section>
             <small>

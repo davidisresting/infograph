@@ -321,12 +321,13 @@
   .card-head {
     /* border-radius: 15px 0 0 15px; */
     border-radius: 0 15px 15px 0;
-    height: 365px;
+    /* min-height: 365px; */
   }
   .card-body {
     /* border-radius: 15px 0 0 15px; */
     border-radius: 0 15px 15px 0;
-    height: 365px;
+    min-height: 365px;
+    /* overflow: visible; */
   }
   .arrow {
     width: 3rem;
@@ -390,4 +391,8 @@
 
 .trans {
   opacity: .2;
+}
+
+.botcard {
+  align-items: stretch;
 }
