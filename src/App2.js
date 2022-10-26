@@ -12,6 +12,7 @@ import darkBlue_note from './darkBlue_note.jpg';
 import orange_note from './orange_note.jpg';
 import { useMediaQuery } from 'react-responsive';
 import CardMobile from './CardMobile';
+import TreeMobile from './TreeMobile';
 
 
 
@@ -272,7 +273,7 @@ const isTabletOrMobile = useMediaQuery({
         </section>
         )}
 
-        {/* {isTabletOrMobile && <TreeMobile />} */}
+        {isTabletOrMobile && <TreeMobile />}
 
 
         <section className='notes'>

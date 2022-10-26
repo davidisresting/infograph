@@ -1,0 +1,10 @@
+
+
+@media screen and (max-width: 768px) {
+  .grid5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .line {
+    margin: -1rem 0;
+  }
+}
