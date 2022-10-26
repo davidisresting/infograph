@@ -36,7 +36,7 @@ const isTabletOrMobile = useMediaQuery({
                 <li>
                 Altri biomarcatori rilevanti a livello terapeutico da valutare nella pratica clinica di routine includono:
                 - lo stato mutazionale germinale BRCA1/2 (gBRCAm) nei MBC HER2 negativi;
-                - lo stato di PD-L1 nei TNBC.2
+                - lo stato di PD-L1 nei TNBC.<sup>2</sup>
                 </li>
             </ul>
         </section>
@@ -44,7 +44,7 @@ const isTabletOrMobile = useMediaQuery({
         {!isTabletOrMobile && (
         <section>
             <div className='thborder--red rounded p1'>
-                <div className='grid grid5'>
+                <div className='grid5'>
                     <div className='red-bg white center p05 bold md rounded g5'>
                         Pazienti con mTNBC
                     </div>
@@ -86,18 +86,35 @@ const isTabletOrMobile = useMediaQuery({
                         <img src={black_arrow} alt='black_arrow' className='black_arrowLong' />
                     </div> */}
 
+                    <div className='g1'></div>
+                    {/* <div className='g1 line3 flex'>
+                        <div className='lineInner3'>F</div>
+                    </div> */}
+
+                    <div className='g2'></div>
+
+                    <div className='barrow snet1 flex g1 gy05'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+
+                    <div className='barrow snet2 flex g1 gy05'>
+                        <img src={black_arrow} alt='black_arrow' className='black_arrow' />
+                    </div>
+
                     <div className='g1 line flex'>
                         <div className='lineInner'></div>
                     </div>
 
-                    <div className='g2'></div>
+                    <div className='g1 net net1'></div>
 
-                    <div className='border--black center p05 bold rounded g1'>
+                    <div className='g1 net net2'></div>
+
+                    <div className='mtop05 border--black center p05 bold rounded g1'>
                         Insufficienza
                         d’organo imminente
                     </div>
 
-                    <div className='border--black center p05 bold rounded g1'>
+                    <div className='mtop05 border--black center p05 bold rounded g1'>
                         Nessuna insufficienza
                         d’organo imminente
                     </div>
@@ -243,7 +260,7 @@ const isTabletOrMobile = useMediaQuery({
                     </div>
                 </div>
 
-                <small>Elaborazione grafica Fig. 5 Ref. 2</small>
+                <small className='my1'>Elaborazione grafica Fig. 5 Ref. 2</small>
                 <small>aPuò essere considerato come monoterapia in ulteriori linee in caso di elevata positività a PD-L1 e senza una precedente esposizione a ICI.2</small>
                 <small>bApprovato dall’EMA, non approvato dalla FDA.2</small>
                 <small>cApprovato dalla FDA, non approvato dall’EMA.2</small>

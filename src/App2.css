@@ -274,8 +274,10 @@
     display: flex;
   } */
   .grid5 {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
-
+    gap: 1rem;
+    position: relative;
     /* grid-template-rows: repeat(10, 50px); */
   }
   .g1 {
@@ -292,6 +294,10 @@
   }
   .g5 {
     grid-column: span 5;
+  }
+
+  .gy05 {
+    grid-row: span .5;
   }
 
   .gy1 {
@@ -420,14 +426,182 @@
 .barrowLong {
   height: 6rem;
 }
-
-
-.line {
+.sarrow {
   /* background-color: red; */
+  margin: -1rem -.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 5rem; */
+  transform: rotate(180deg);
+  border-top: .15rem solid var(--arrowColor);  
+  border-left: .15rem solid var(--arrowColor);
 }
-.lineInner {
+.sarrow .black_arrow {
+  height: 1.5rem;
+  height: 2rem;
+  /* margin: -20px; */
+  /* margin: -1rem; */
+  margin: 1rem;
+  transform: rotate(180deg);
+}
+.mtop05 {
+  margin-top: 1rem;
+}
+/* .net {
+  margin: -2rem -.5rem;
+  margin: -2rem .5rem 0 -.5rem;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transform: rotate(180deg);
+  border-top: .15rem solid var(--arrowColor);  
+  border-left: .15rem solid var(--arrowColor);
+} */
+.net1 {
+  margin: -2rem -.5rem 0 7.8rem;
+  border-bottom: .15rem solid var(--arrowColor);  
+  border-right: .15rem solid var(--arrowColor);
+}
+.net2 {
+  margin: -2rem 7.8rem 0 -.5rem;
+  border-bottom: .15rem solid var(--arrowColor);  
+}
+.snet1::before {
+  content: '';
+  width: 50%;
+  width: 8.3rem;
+  height: 50%;
+  position: absolute;
+  /* top: 50%; */
+  top: -50%;
+  /* right: 50%; */
+  right: 0;
+  /* border-top: 1px solid yellow; */
+  background-color: white;
+  /* background-color: blue; */
+}
+.snet1 {
+  /* background-color: red; */
+  margin: -1rem -.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 5rem; */
+  transform: rotate(180deg);
+  border-top: .15rem solid var(--arrowColor);  
+  border-left: .15rem solid var(--arrowColor);
+}
+.snet1 .black_arrow {
+  height: 1.5rem;
+  height: 2rem;
+  /* margin: -20px; */
+  /* margin: -1rem; */
+  margin: 1rem;
+  transform: rotate(180deg);
+}
+.snet2::after {
+  content: '';
+  width: 50%;
+  width: 8.055rem;
+  height: 50%;
+  position: absolute;
+  /* top: 50%; */
+  top: -50%;
+  /* right: 50%; */
+  left: 0;
+  /* border-top: 1px solid yellow; */
+  background-color: white;
+  /* background-color: blue; */
+  /* z-index: 10; */
+}
+.snet2 {
+  /* background-color: red; */
+  margin: -1rem -.5rem;
+  margin: -1rem 0 -1rem -.5rem;
+  
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  justify-content: center;
+  /* align-items: center; */
+  align-items: flex-end;
+
+  /* height: 5rem; */
+  transform: rotate(180deg);
+  border-top: .15rem solid var(--arrowColor);  
+  /* width: 50%; */
+  /* border-left: .15rem solid var(--arrowColor); */
+  position: relative;
+}
+.snet2 .black_arrow {
+  height: 1.5rem;
+  height: 2rem;
+  /* margin: -20px; */
+  /* margin: -1rem; */
+
+  margin: 1rem 5rem;
+
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+.line2 {
+  /* background-color: red; */
+  border-right: .236rem solid var(--arrowColor);;
+  /* height: 1rem; */
+  /* height: 100%; */
+  width: 8rem;
+  margin-top: -1rem;
+}
+/* .line {
   width: .236rem;
   height: 1rem;
   height: 100%;
   background-color: var(--arrowColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.line {
+  width: 100%;
+  height: 100%;
+  height: 9.1rem;
+  margin: -2rem 0;
+  /* background-color: lightgreen; */
+  position: relative;
+}
+.lineInner {
+  width: .237rem;
+  height: 1rem;
+  height: 100%;
+  background-color: var(--arrowColor);
+  z-index: 10;
+}
+.line3 {
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+  position: relative;
+  /* z-index: 100; */
+  margin: -3rem 0;
+}
+.lineInner3 {
+  width: .236rem;
+  height: 1rem;
+  height: 100%;
+  background-color: var(--arrowColor);
+  z-index: 10;
 }

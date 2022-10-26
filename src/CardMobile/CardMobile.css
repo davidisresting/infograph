@@ -13,7 +13,7 @@
     .mrow {
         grid-column: span 3;
     }
-    .arrow {
+    .carrow {
         transform: rotate(90deg);
         margin: 1rem 0;
     }

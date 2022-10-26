@@ -41,7 +41,7 @@ export default function CardMobile() {
                         </div>
 
                         <div className='flex mrow'>
-                            <img src={arrow} alt='arrow' className='arrow center' />
+                            <img src={arrow} alt='arrow' className='arrow carrow center' />
                         </div>
 
                         <div className='white-bg center rounded p05 rmobile'>
@@ -76,7 +76,7 @@ export default function CardMobile() {
                         </div>
 
                         <div className='flex mrow'>
-                            <img src={arrow} alt='arrow' className='arrow center' />
+                            <img src={arrow} alt='arrow' className='arrow carrow center' />
                         </div>
 
                         <div className='white-bg center rounded p05'>
